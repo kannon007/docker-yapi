@@ -31,10 +31,17 @@ RUN cd  /app/node/ && \
     
 
 RUN cd /app/yapi/ && \
+<<<<<<< HEAD
     wget  https://github.com/YMFE/yapi/archive/v1.5.13.tar.gz && \
     tar -zxvf *.gz 
 
 WORKDIR /app/yapi/yapi-1.5.13
+=======
+    wget  https://github.com/YMFE/yapi/archive/v1.5.12.tar.gz && \
+    tar -zxvf *.gz 
+
+WORKDIR /app/yapi/yapi-1.5.12
+>>>>>>> 800dd323025fb9c15b8f31c02869b504ded0534c
 USER root
 RUN npm install --unsafe-perm
 EXPOSE 27017
