@@ -32,7 +32,7 @@ RUN cd  /app/node/ && \
 
 RUN cd /app/yapi/ && \
     mkdir yapiApp && \
-    wget  https://github.com/YMFE/yapi/archive/v1.7.0.tar.gz && \
+    wget  https://github.com/YMFE/yapi/archive/v1.8.4.tar.gz && \
     tar -zxvf *.gz  -C ./yapiApp --strip-components 1
 
 WORKDIR /app/yapi/yapiApp
